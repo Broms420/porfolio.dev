@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Github from "../components/icons/Github.astro";
+import Mail from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import Code from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout
+  title="Porfolio de Orlando Mora - Desarollador y Programador Web"
+  description="Contrata a Orlando Mora para crear tu aplicacion web"
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-24">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="https://imgs.search.brave.com/gpVLBIWlZEYUFQ5k9-v3L8wBUCl_ibW7qPyiEGQuBYM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcx/MTE0MjE5L3Bob3Rv/L2Jtdy1sb2dvLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1C/bUIwSE9KSE82NjMw/WVJGcVNWNVB3V2Rm/SWVvd2JBNFptaWdh/TFlTb0JrPQ"
+        alt="broms photo"
+      />
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, Soy Orlando <a
+          href="http://www.linkedin.com/in/orlando-rmb"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible Para Trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+1 año de experiencia.</span>
+        <span class="text-yellow-200/90">
+          Desarrollador Web - Backend-Frontend</span
+        >. <span class="text-green-200/90"> De Sinaloa, Mexico.</span>
+        <span class="opacity-75"> Especializado en Desarrollar Software.</span>
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="http://www.linkedin.com/in/orlando-rmb">
+          <Linkedin class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Broms420">
+          <Github class="size-4 md:size-6" />
+          Github
+        </SocialPill>
+        <SocialPill href="mailto:orlandosurf420@gmail.com">
+          <Mail class="size-4 md:size-6" />
+          orlandosurf420@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-xl font-semibold mb-10 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-10 flex gap-x-3 items-center">
+        <Code class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
